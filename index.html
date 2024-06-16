@@ -58,22 +58,11 @@
         .video-container {
             text-align: center;
             margin: 50px 0;
-            position: relative;
-            width: 80%;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .video-container img {
-            width: 100%;
-            cursor: pointer;
         }
         .video-container iframe {
-            width: 100%;
+            width: 80%;
             height: 400px;
             max-width: 800px;
-            display: none;
-            border: none;
         }
         footer {
             text-align: center;
@@ -117,9 +106,9 @@
                 <p>Description of project 3.</p>
             </div>
         </div>
-        <div class="video-container" id="video-container">
+        <div class="video-container">
             <h2>Featured Video</h2>
-            <iframe src="https://www.youtube.com/embed/SdDzi4aaZNM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video-iframe"></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
     <section id="blog">
@@ -142,11 +131,5 @@
     <footer>
         <p>&copy; 2024 Zen Artwork. All rights reserved.</p>
     </footer>
-    <script>
-        document.getElementById('video-thumbnail').addEventListener('click', function() {
-            this.style.display = 'none';
-            document.getElementById('video-iframe').style.display = 'block';
-        });
-    </script>
 </body>
 </html>
